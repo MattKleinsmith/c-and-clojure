@@ -13,7 +13,11 @@ cc src/chapter_1/fahrenheit_to_celsius.c && ./a.out
 To view the assembly from the C code:
 
 ```
-objdump -s -d
+objdump -s -d > src/chapter_1/fahrenheit_to_celsius.objdump
 ```
 
-<img src="assembly.png" width="66%">
+Idea: On save, build run objdump and compare the diff. We can use VS Code's git panel:
+
+<img src="c-diff.png">
+
+<img src="objdump-diff.png">
